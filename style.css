@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+.menu-burguer{
+    display: none;
+
+}
+    
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    height: 120px;
+    justify-content: end;
+    column-gap: 10%;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.header{
+    background-color: #f6eee1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.logo{
+    position: absolute;
+}
+
+.navegador{
+    position: relative;
+}
+
+main{
+    padding-top: 10%;
+    background-color: #fdd1d0;
+}
+
+.menu a{
+    display: block;
+    text-decoration: none;
+    color: #e67380;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+
+.menu a:hover{
+    background-color: #fdd1d0;
+}
+
+.titulo{
+    color: #f6eee1;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Mate SC', serif;
+    background-color: #a62c55;
+    padding: 10px;
+}
+
+.bloque1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.imagen{
+    padding: 1%;
+}
+
+.items{
+    padding: 15%;
+    font-family:'Barlow Condensed', sans-serif;
+    color: #a62c55;
+    font-size: 25px;
+    
+}
+
+.bloque2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+
+
+/*pie de pagina*/
+
+footer {
+    background-color: #f6eee1;
+}
+
+/* titulo footer*/
+
+.titulofooter{
+    text-align: center;
+    color:#f6eee1;
+    background-color:#a62c55;
+    font-family: 'Mate SC', serif;
+}
+
+.navfooter{
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+    padding: 6px;
+}
+
+
+/* CSS POR SECCIONES */
+
+/* Nosotras */
+
+.fondonosotras{
+    background-image:url(./images/maria.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 25%;
+}
+
+.fondotextonosotras{
+    background-color: rgba(253, 209, 208, .6);
+}
+
+
+.titulonosotras{
+    text-align: center;
+    color: #a62c55;
+    font-size: 45px;
+    font-family: 'Mate SC', serif;
+}
+
+.parrafonosotras{
+    text-align: center;
+    color: #e67380;
+    font-size: 20px;
+}
+
+
+/* Turnos */
+
+.tituloturnos{
+    text-align: center;
+    background-color: #a62c55;
+    font-family:'Mate SC', serif;
+    color: #f6eee1;
+    font-size: 40px;
+}
+
+.fondoformulario {
+    position: relative;
+    bottom: 100px;
+    width: 400px;
+    background:#a62c55;
+    padding: 30px;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .fondoformulario h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controles {
+    width: 100%;
+    background: #a62c55;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #fdd1d0;
+    font-family: 'calibri';
+    font-size: 18px;
+    color:white;
+  }
+  
+   .boton {
+    width: 100%;
+    background: #e67380;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+  /* Ubicacion */ 
+
+  .tituloubic{
+    text-align: center;
+    background-color: #a62c55;
+    font-family:'Mate SC', serif;
+    color: #f6eee1;
+    font-size: 40px;
+
+  }
+
+  .parrafoubic{
+      text-align: center;
+      color: #e67380;
+      font-size: 20px;
+
+  }
+
+  .mapa{
+      margin-left: 39%;
+      
+  }
+
+  /* Tratamientos */
+
+  .titulotratamientos{
+    text-align: center;
+    background-color: #a62c55;
+    font-family:'Mate SC', serif;
+    color: #f6eee1;
+    font-size: 40px;
+  }
+
+  .parrafotratam{
+      text-align: center;
+      color: #e67380;
+      font-size: 20px;
+
+  }
+
+  .bloque3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.imgtratam{
+    padding: 5%;
+    margin-left: 30%;
+}
+
+.itemstratam{
+    padding: 15%;
+    font-family:'Barlow Condensed', sans-serif;
+    color: #a62c55;
+    font-size: 25px;
+    
+}
+
+
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width:320px) {
+    .fondonosotras{
+        background-image:url(./images/maria.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 0%;
+    }
+    .itemstratam{
+        display: none;
+    }
+    
+    .fondoformulario{
+        width: 300px;
+    }
+    .imgt{
+        height: 479px;
+    }
+    .imgtratam {
+        padding: 0%;
+        margin-left: 0%;
+    }
+    .navfooter{
+        padding: 31px;
+    }
+    .mapa{
+        margin-left: 0%;
+    }
+
+    }
+
+@media screen and (max-width:1023px) {
+    .menu-burguer{
+        display: block;
+    }
+    .menu li{
+        display: none;
+    }
+    
+    .header{
+        position: relative;
+    }
+    main {
+        padding-top: 0%;
+        background-color: #fdd1d0;
+    }
+
+    .bloque1{
+        background-image:url(./images/Maquina.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .bloque2{
+        background-image:url(./images/operadora.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .imagen{
+        display: none;
+    }
+
+    .itemstratam{
+        display: none;
+    }
+}
+
+        @media screen and (min-width:1210px) {
+            main{
+                padding-top: 6%;
+            }
+        }
+     
+ 
+
+
+
+
